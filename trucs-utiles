@@ -1,0 +1,31 @@
+
+$ xmllint --valid --noout master.xml
+
+$ xmllint --valid --noout master.xml -schema master.xsd
+
+$ xsltproc -o master.html master.xsl master.xml
+
+
+
+<!-- 
+<xsl:template name="faire-un-lien">
+    <xsl:param name="href"   />
+    <xsl:param name="target"  >_blank</xsl:param>
+
+    <a href="{$href}" target="{$target}">
+        <xsl:apply-templates/>
+    </a>
+</xsl:template>
+ -->
+
+<!--
+<xsl:call-template name="faire-un-lien">
+    <xsl:with-param name="target">ALL</xsl:with-param>
+    <xsl:with-param name="href" select="'ma-page.html'" />
+</xsl:call-template>
+ -->
+
+<!--
+<a href="truc.html#bla">Johan</a>
+<p id="bla">un texte et diverses choses belles et variées.</p>
+-->

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	
+	<!-- ELEMENTS -->
+	<xs:element name="master" type="master"/>
+		<xs:element name="intervenant" substitutionGroup="objet" type="intervenant"/>
+			<xs:element name="email" type="xs:string"/>
+			<xs:element name="web" type="xs:anyURI"/>
+		<xs:element name="ue" substitutionGroup="objet" type="ue"/>
+			<xs:element name="credit" type="xs:integer"/>
+			<xs:element name="resume" type="xs:string"/>
+			<xs:element name="lieu" type="xs:string"/>
+		<xs:element name="parcours" substitutionGroup="objet" type="parcours"/>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="debouches" type="xs:string"/>
+			<xs:element name="semestre" type="semestre"/>
+				<xs:element name="bloc" type="bloc"/>
+					<xs:element name="role" type="xs:string"/>
+
+	<xs:element name="ref-ue" type ="ref-ue"/>
+	<xs:element name="nom" type="xs:string"/>
+	<xs:element name="ref-intervenant" type="ref-intervenant"/>
+	<xs:element name="personne" type="personne"/>
+	<xs:element name="objet" abstract="true" />
+	
+	
+	<!-- TYPES -->
+	<xs:complexType name="master">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" ref="intervenant"/>
+			<xs:element maxOccurs="unbounded" ref="ue"/>
+			<xs:element maxOccurs="unbounded" ref="parcours"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="intervenant">
+		<xs:sequence>
+			<xs:element ref="nom"/>
+			<xs:element ref="email"/>
+			<xs:element ref="web"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="required" type="xs:NCName"/>
+	</xs:complexType>
+	
+	<!-- extension de <intervenant> -->
+	<xs:complexType name="personne">
+	   <xs:complexContent>
+	      <xs:extension base="intervenant" >
+			  <xs:sequence>
+	           <xs:element name="adresse" type="xs:string"/>
+	         </xs:sequence>
+	      </xs:extension>
+	   </xs:complexContent>
+	</xs:complexType>
+	
+	<xs:complexType name ="ue">
+		<xs:sequence>
+			<xs:element minOccurs="0" ref="ref-intervenant"/>
+			<xs:element ref="nom"/>
+			<xs:element ref="credit"/>
+			<xs:element ref="resume"/>
+			<xs:element ref="lieu"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="required" type="xs:NCName"/>
+	</xs:complexType>
+	
+	<xs:complexType name="ueLuminy">
+		<xs:complexContent>
+			<xs:restriction base="ue">
+				<xs:sequence>
+					<xs:element minOccurs="0" ref="ref-intervenant"/>
+					<xs:element ref="nom"/>
+					<xs:element ref="credit"/>
+					<xs:element ref="resume"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID" use="required"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	
+
+	<xs:complexType name="parcours">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" ref="ref-intervenant"/>
+			<xs:element ref="nom"/>
+			<xs:element ref="description"/>
+			<xs:element minOccurs="0" ref="debouches"/>
+			<xs:element maxOccurs="unbounded" ref="semestre"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="required" type="xs:NCName"/>
+	</xs:complexType>
+  
+	<xs:complexType name="semestre">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" ref="bloc"/>
+		</xs:sequence>
+	</xs:complexType>
+  
+	<xs:complexType name="bloc">
+		<xs:sequence>
+			<xs:element ref="role"/>
+			<xs:element maxOccurs="unbounded" ref="ref-ue"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ref-ue">
+		<xs:attribute name="ref" use="required" type="xs:NCName"/>
+	</xs:complexType>
+
+	<xs:complexType name="ref-intervenant">
+		<xs:attribute name="ref" use="required" type="xs:NCName"/>
+	</xs:complexType>
+  
+</xs:schema>

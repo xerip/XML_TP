@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!-- entites -->
+<!-- 
+<!ENTITY lum "Campus de Luminy" >
+<!ENTITY stj "Campus de Saint-Jérôme" >
+<!ENTITY mail "@univ-amu.fr" >
+<!ENTITY lif "http://pageperso.lif.univ-mrs.fr/~" >
+<!ENTITY ueo "Unités obligatoires" >
+<!ENTITY cac "crédits à choisir" >
+-->
+
+<!ELEMENT master (intervenant+, ue+, parcours+)>
+
+<!-- elements de master -->
+<!ELEMENT intervenant (nom,email?,web?)>
+<!ELEMENT parcours (ref-intervenant+,nom,description,debouches?,semestre+)>
+<!ELEMENT ref-parcours ANY>
+
+
+<!-- elements de parcours -->
+<!-- <!ELEMENT responsable (#PCDATA)> -->
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT debouches (#PCDATA)>
+<!ELEMENT semestre (bloc+)>
+
+<!-- elements de semestre -->
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT bloc (role,ref-ue+)>
+<!ELEMENT ue (ref-intervenant?,nom,credit,resume,plan?,lieu)>
+
+<!-- elements nom pour plusieurs elements-->
+<!ELEMENT nom (#PCDATA)>
+
+<!-- elements de ue -->
+<!ELEMENT credit (#PCDATA)>
+<!ELEMENT resume (#PCDATA)>
+<!ELEMENT plan (#PCDATA)>
+<!ELEMENT lieu (#PCDATA)>
+<!ELEMENT ref-intervenant ANY>
+<!ELEMENT ref-ue ANY>
+
+<!-- elements de intervenant -->
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+
+<!-- elements de ue et intervenant -->
+<!ELEMENT id (#PCDATA)>
+
+<!-- relations -->
+<!ATTLIST intervenant id ID #IMPLIED>
+<!ATTLIST ref-intervenant ref IDREF #IMPLIED>
+<!ATTLIST ue id ID #IMPLIED>
+<!ATTLIST ref-ue ref IDREF #IMPLIED>
+<!ATTLIST parcours id ID #IMPLIED>
+<!ATTLIST ref-parcours ref IDREF #IMPLIED>

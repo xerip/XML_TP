@@ -1,0 +1,28 @@
+declare option saxon:output "indent=yes";
+
+<resultat>
+<ul>
+{
+    for
+        $intervenant in doc("master.xml")//intervenant
+        for
+			$ue in doc("master.xml")//ue
+	
+	let $nomInterv := $intervenant/nom
+	let $idInterv := $intervenant/@id
+	let $intervUe := $ue/ref-intervenant/@ref
+    where ($idInterv = $intervUe)
+    order by $intervenant
+    return
+		<li>
+			<intervenant>
+				{attribute id {$intervenant/@id}}
+				{$nomInterv}
+				<ue>
+					{$intervUe}
+				</ue>
+			</intervenant>
+		</li>
+}
+</ul>
+</resultat>
