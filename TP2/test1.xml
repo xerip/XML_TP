@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE stock SYSTEM "exemple.dtd">
+<stock>
+  <?xml-stylesheet
+    href="monStyle.css" media="screen"
+    title="Compact" type="text/css" ?>
+  <produit>
+    <nom> Découvrir &testEntity;  <![CDATA[ XML ]]> </nom>
+    <!--Ceci est un commentaire -->
+    <prix monnaie="Francs"> 100 </prix>
+  </produit>
+  <produit>
+  <nom> DVD </nom>
+ </produit>
+ <untruc>
+  	<nom> bleuh </nom>
+  </untruc>
+</stock>

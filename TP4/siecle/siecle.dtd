@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!ELEMENT siecle   (annee+)>
+<!ELEMENT annee   (numero, semaines, mois+)>
+<!ELEMENT numero   ANY>
+<!ELEMENT numero-semaine   ANY>
+<!ELEMENT numero-annee   ANY>
+<!ELEMENT semaines   (semaine+)>
+<!ELEMENT semaine   (numero, nom, ref-jour+)>
+<!ELEMENT nom   ANY>
+<!ELEMENT personne   ANY>
+
+
+<!ELEMENT mois   (numero, nom, jour+)>
+	<!ATTLIST mois id ID #REQUIRED>
+	<!ATTLIST mois suivant IDREF #IMPLIED>
+<!ELEMENT jour   (nom, numero, numero-semaine, numero-annee, personne*)>
+	<!ATTLIST jour id ID #REQUIRED>
+	<!ATTLIST jour suivant IDREF #IMPLIED>
+<!ELEMENT ref-jour   ANY>
+	<!ATTLIST ref-jour ref IDREF #REQUIRED>

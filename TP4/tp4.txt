@@ -1,0 +1,11 @@
+
+// ex1
+
+// ex2 Listez le nom des jours du deuxième mois de 1950 (conditions sur les numéros).
+'siecle/annee[numero=1950]/mois[2]/jour/nom'
+
+//ex3 Listez les identifiants utilisés pour les lundis de la cinquième année (condition sur la position)
+'siecle/annee[5]/mois/jour[numero-semaine=1 ]/attribute::*'
+
+//ex4 Listez le nom des mois qui débutent un lundi (avec une sous-expression XPATH).
+

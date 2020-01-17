@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!ENTITY  %  nombre
+             "nom">
+
+<!ELEMENT master	(UE+, intervenant+, parcours+)>
+
+<!ELEMENT UE	(nom, identifiant, credit, resume, plan, lieu, ref-intervenant+)>
+	<!ATTLIST UE id ID #IMPLIED>
+	<!ELEMENT ref-intervenant (#PCDATA)>
+		<!ATTLIST ref-intervenant ref IDREF #REQUIRED>
+	<!ELEMENT nom	(#PCDATA)>
+	<!ELEMENT identifiant	(#PCDATA)>
+	<!ELEMENT credit	(%nombre;)>
+	<!ELEMENT resume	(#PCDATA)>
+	<!ELEMENT plan	(#PCDATA)>
+	<!ELEMENT lieu	(#PCDATA)>
+
+<!ELEMENT intervenant	(nom, identifiant, mail, adrWeb, ref-UE*)>
+	<!ATTLIST intervenant id ID #IMPLIED>
+	<!ELEMENT ref-UE (#PCDATA)>
+		<!ATTLIST ref-UE ref IDREF #IMPLIED>
+	
+	<!ELEMENT mail	(#PCDATA)>
+	<!ELEMENT adrWeb	(#PCDATA)>
+	<!ENTITY  adrMail  "mail.com" >
+	<!ENTITY  ville  "Marseille" >
+	
+<!ELEMENT parcours (responsable+, nom, description, debouches*, semestre+)>
+	<!ELEMENT responsable	(#PCDATA)>
+	<!ELEMENT description	(#PCDATA)>
+	<!ELEMENT debouches	(#PCDATA)>
+
+<!ELEMENT semestre (bloc+)>
+	<!ELEMENT bloc (UE+)>
+		<!ATTLIST bloc role (obligatoire|optionnel) #REQUIRED>

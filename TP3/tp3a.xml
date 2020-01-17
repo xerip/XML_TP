@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet
+    href="monStyle.css" media="screen"
+    title="Compact" type="text/css" ?>
+<!DOCTYPE master SYSTEM "tp3a.dtd">
+
+
+<master>
+	
+  <UE id="ENSINAU1">
+    <nom> Génie Logiciel </nom>
+    <identifiant> ENSINAU1 </identifiant>
+    <credit> <nom>6</nom> </credit>
+    <resume> 
+	Processus logiciel
+    Gestion de projet
+    Spécification et conception (artefact : notation UML)
+    Design patterns
+	</resume>
+    <plan> </plan>
+    <lieu> &ville; </lieu>
+    <ref-intervenant ref="Delafontaine"/>
+  </UE>
+  
+  <intervenant id="Delafontaine">
+  	<nom> Jean </nom>
+  	<identifiant> 100 </identifiant>
+  	<mail> jean&adrMail; </mail>
+  	<adrWeb>  http://masterinfo.univ-mrs.fr </adrWeb>
+  	<ref-UE ref="UNCODE"/>
+  	<ref-UE ref="DEUXCODE"/>
+  </intervenant>
+  
+  <parcours>
+	  <responsable> Emmanuel Godard </responsable>
+	  <nom> Fiabilité et sécurité informatique </nom>
+	  <description> 
+		  La formation donne les principes et techniques liés à la 
+		  conception de systèmes informatiques surs dans un 
+		  environnement ouvert et hétérogène. Elle forme les étudiants
+		  aux principes et méthodes de développement modernes qui 
+	      reposent sur des outils de prototypage, de test et de suivi
+	      de logiciels, avec des méthodologies normalisées. 
+	      Elle apporte des compétences fortes en sécurité informatique
+	      dans les domaines liés à l'échange d'information 
+	      (Web-services,
+	      protocoles de communication et cryptographiques,..)
+	      et à la communication entre systèmes (réseaux hétérogènes 
+	      et applications embarquées ou distribuées).
+	  </description>
+	  <debouches>  Ingénieur études et développement </debouches>
+	  <debouches>  Responsable réseaux </debouches>
+	  <debouches>  Responsable systèmes et sécurité </debouches>
+	  <debouches>  Ingénieur qualité </debouches>
+	  <semestre>
+		  <bloc role="TC">
+			  <UE id="ENSINCU27">
+				  <nom> Anglais </nom>
+				  <identifiant> ENSINCU27 </identifiant>
+				  <credit> <nom>3</nom> </credit>
+				  <resume> 
+					  Expression orale et écrite : exposés sur des 
+					  sujets scientifiques et / ou professionnels, 
+					  travaux écrits. Préparation et passage du TOEIC.
+				  </resume>
+				  <plan> - </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+			  <UE id="ENSINCU31">
+				  <nom> Systèmes hétérogènes </nom>
+				  <identifiant> ENSINCU31 </identifiant>
+				  <credit> <nom>3</nom> </credit>
+				  <resume> 
+						Les parties magistrales de l'enseignement 
+						seront l'occasion d'aborder notamment les 
+						aspects suivants :
+					    Introduction aux métiers et organisation des 
+					    Systèmes d'Information (DSI, AMO, MOE, 
+					    architectes, exploitants...)
+					    Introduction aux stratégies d'entreprises autour 
+					    de leurs systèmes d'information (plan de 
+					    continuité d'activité, plan de reprise 
+					    d'activité, plan de continuité informatique...)
+					    Introduction à la conception et à l'évolution 
+					    de systèmes d'information (recueil et analyse 
+					    de l'existant, des besoins et contraintes, 
+					    scénarii, rédaction de cahier des charges...)
+					    Découvertes des technologies liées à la 
+					    disponibilité et haute disponibilité des 
+					    données informatiques (réseaux de stockage 
+					    - SAN, NAS -, virtualisation...)
+					    Découverte des architectures de disponibilité 
+					    et haute disponibilité des SI (analyse des 
+					    besoins, conception, cloud computing...)
+					    Approfondissement des savoirs autour des 
+					    réseaux de transferts de données 
+					    d'entreprises (routage, réseaux privés 
+					    virtuels...)
+					    Découverte des infrastructures de services 
+					    des réseaux de données
+						Pré-requis :
+						Connaissances fondamentales en utilisation et 
+						administration des systèmes d'exploitation de 
+						type serveurs (Microsoft, Linux).
+				  </resume>
+				  <plan> Cours/TD/TP : 12h/10h/8h </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+		  </bloc>
+		  <bloc role="optionnel">
+			  <UE id=" ENSINCU67">
+				  <nom> Projet d'entreprise </nom>
+				  <identifiant>  ENSINCU67 </identifiant>
+				  <credit> <nom>3</nom> </credit>
+				  <resume> 
+					  L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.
+				  </resume>
+				  <plan> Cours/TD : 10h/20h </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+		  </bloc>
+	  </semestre>
+	    <semestre>
+		  <bloc role="obligatoire">
+			  <UE id="ENSINDU3">
+				  <nom> Projet industriel de mise en application </nom>
+				  <identifiant> ENSINDU3 </identifiant>
+				  <credit> <nom>6</nom> </credit>
+				  <resume> 
+					  Rédaction du cahier des charges. Conception de 
+					  l'application. Développement et test. 
+					  Rédaction d'un mémoire et présentation.
+				  </resume>
+				  <plan> - </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+		  </bloc>
+	  </semestre>
+  </parcours>
+  
+  <parcours>
+	  <responsable> Yann Vaxes </responsable>
+	  <nom> Recherche opérationnelle </nom>
+	  <description> 
+		  La recherche opérationnelle consiste à utiliser des méthodes et des modèles pour résoudre des problèmes complexes d'organisation, de planification, de gestion de ressources, ou d'optimisation issus de nombreux secteurs d'activités comme le transport, l'industrie, les télécommunications, la finance... La résolution de ces problèmes constitue un enjeu économique et industriel important. La conception d'applications décisionnelles requiert une phase de spécification et d'extraction de données lors de laquelle les compétences acquises par les étudiants de la spécialité ID dans le domaine de la fouille et des entrepôts de données sera particulièrement utile. Elle nécessite également des connaissances fondamentales dans le domaine de la modélisation et de l'optimisation et une très bonne maîtrise des outils nécessaires pour concevoir et développer des applications décisionnelles (langages de modélisation, solveurs, structures de données, algorithmes…).
+	  </description>
+	  <debouches> Administrateur de bases de données ou d’entrepôts de données. </debouches>
+	  <debouches> Extraction, transformation et chargement des données. </debouches>
+	  <semestre>
+		  <bloc role="optionnel">
+			  <UE id=" ENSINCU67">
+				  <nom> Projet d'entreprise </nom>
+				  <identifiant>  ENSINCU67 </identifiant>
+				  <credit> <nom>3</nom> </credit>
+				  <resume> 
+					  L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.
+				  </resume>
+				  <plan> Cours/TD : 10h/20h </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+		  </bloc>
+		  <bloc role="obligatoire">
+			  <UE id="  ENSINCU54">
+				  <nom> Recherche locale </nom>
+				  <identifiant>   ENSINCU54 </identifiant>
+				  <credit> <nom>3</nom> </credit>
+				  <resume> 
+					  Introduction et méthodologie.
+					  – Stratégie de recherche et mouvements.
+					  – Algorithmique incrémentale.
+					  – Modélisation orientée recherche locale.
+					  – Un solveur par recherche locale : LocalSolver.
+					  – Etude de cas.
+				  </resume>
+				  <plan> </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+		  </bloc>
+	  </semestre>
+	  <semestre>
+		  <bloc role="obligatoire">
+			  <UE id=" ENSINDU3">
+				  <nom> Projet industriel de mise en application </nom>
+				  <identifiant>  ENSINDU3 </identifiant>
+				  <credit> <nom>6</nom> </credit>
+				  <resume> 
+					  Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.
+				  </resume>
+				  <plan>  </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+		  </bloc>
+	  </semestre>
+  </parcours>
+  
+</master>

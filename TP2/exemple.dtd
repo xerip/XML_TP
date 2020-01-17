@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!ELEMENT stock    (produit+,quantite*, untruc)>
+<!ELEMENT untruc  (nom)>
+<!ELEMENT produit  (nom,prix?)>
+<!ELEMENT nom      (#PCDATA)>
+<!ELEMENT quantite      (#PCDATA)>
+
+<!ELEMENT prix     (#PCDATA)>
+<!ATTLIST prix
+    monnaie (Euros|Francs) #IMPLIED
+    >
+
+
+<!ENTITY  testEntity  "salut" >

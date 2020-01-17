@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE master SYSTEM "master.dtd">
+
+<master>
+	<intervenant id="arrighi">
+		<nom>Arrighi Pablo</nom>
+		<email>pablo.ARRIGHI&mail;</email>
+		<web>&lif;pablo.arrighi/</web>
+	</intervenant>
+	<intervenant id="olive">
+		<nom>Olive Frédéric</nom>
+		<email>frederic.olive&mail;</email>
+		<web>&lif;frederic.olive/</web>
+	</intervenant>
+	<intervenant id="godard">
+		<nom>Godard Emmanuel</nom>
+		<email>emmanuel.godard&mail;</email>
+		<web>&lif;emmanuel.godard/</web>
+	</intervenant>
+	<intervenant id="santocanale">
+		<nom>Santocanale Luigi</nom>
+		<email>luigi.santocanale&mail;</email>
+		<web>&lif;luigi.santocanale/</web>
+	</intervenant>
+	<intervenant id="sabatier">
+		<nom>Sabatier Claude</nom>
+		<email>claude.sabatier&mail;</email>
+		<web>&lif;claude.sabatier/</web>
+	</intervenant>
+	<intervenant id="bechet">
+		<nom>Bechet Frédéric</nom>
+		<email>frederic.BECHET&mail;</email>
+		<web>&lif;frederic.bechet/</web>
+	</intervenant>
+	<intervenant id="reynier">
+		<nom>Reynier Pierre-Alain</nom>
+		<email>pierre-alain.reynier&mail;</email>
+		<web>&lif;pierre-alain.reynier/</web>
+	</intervenant>
+	<intervenant id="dal-molin">
+		<nom>Dal Molin Alain</nom>
+		<email>alain.dal-molin&mail;</email>
+		<web>&lif;alain.dal-molin/</web>
+	</intervenant>
+	<intervenant id="rene-chabarot">
+		<nom>Rene Chabarot Lydie</nom>
+		<email>lydie.rene&mail;</email>
+		<web>irsic.univ-amu.fr/Lydie-RENE/</web>
+	</intervenant>
+	<intervenant id="massat">
+		<nom>Massat Jean-Luc</nom>
+		<email>jean-luc.massat&mail;</email>
+		<web>&lif;jean-luc.massat/</web>
+	</intervenant>
+	
+	<ue id="ENSINAU1">
+		<ref-intervenant ref="arrighi" />
+		<nom>Génie logiciel</nom>
+		<credit>6</credit>
+		<resume>			
+			Processus logiciel
+			Gestion de projet
+			Spécification et conception (artefact : notation UML)
+			Design patterns
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU2">
+		<ref-intervenant ref="olive" />
+		<nom>Complexité</nom>
+		<credit>6</credit>
+		<resume>						
+			Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.
+			Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.
+			Classes P et NP. Problèmes NP-complets.
+			Méthodes de résolution des problèmes NP-Complets.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU3">
+		<ref-intervenant ref="godard" />
+		<nom>Réseaux</nom>
+		<credit>6</credit>
+		<resume>						
+			Architecture en couches, standard OSI
+			Couche physique
+			Couche liaison de Données
+			Réseau IP
+			Algorithmes de routage, routage IP
+			Protocole TCP/IP
+			Couche Application : HTTP, SMTP, FTP, ...
+			Bases des protocoles cryptographiques (terminologie, architecture à clef publique).
+			Introduction à la Sécurité des réseaux.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU4">
+		<ref-intervenant ref="santocanale" />
+		<nom>Programmation fonctionnelle</nom>
+		<credit>3</credit>
+		<resume>						
+			1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
+			OCaml
+			Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
+			Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
+			2- Les types
+			Sommes, types récursifs, polymorphes. Arbres. Filtrage.
+			3- Sémantique opérationnelle
+			Liaisons, environnements, clôtures. Évaluation des fonctions récursives .
+			4- Aspects impératifs
+			Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
+			5- Implantation du filtrage en OCaml
+			Termes formels, substitutions, filtrage.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU12">
+		<ref-intervenant ref="sabatier" />
+		<nom>BDR : Approfondissement</nom>
+		<credit>3</credit>
+		<resume>						
+			Nous sommes désolé, mais nous n'avons pas encore de résumé.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU6">
+		<nom>Programmation logique</nom>
+		<credit>3</credit>
+		<resume>
+			Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
+			Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
+			Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
+			Règles prédéfinies.	
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU7">
+		<nom>Outils de l'internet</nom>
+		<credit>3</credit>
+		<resume>		
+			Présentation d'Internet.
+			Les langages et les normes sur Internet.
+			Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
+			Les applications web.
+			Sécurité.
+			Les nouvelles et futures technologies.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU8">
+		<nom>Systèmes embarqués</nom>
+		<credit>3</credit>
+		<resume>		
+			Nous sommes désolé, mais nous n'avons pas encore de résumé.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU9">
+		<ref-intervenant ref="bechet" />
+		<nom>Fondamentaux pour l'ingénierie des langues</nom>
+		<credit>3</credit>
+		<resume>						
+			Rappel de théorie des langages
+			Algorithmes d'analyse syntaxique pour grammaires ambiguës
+			Transducteurs finis et leur application en TAL
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU10">
+		<ref-intervenant ref="reynier" />
+		<nom>Modèles à évènements discrets</nom>
+		<credit>3</credit>
+		<resume>						
+			Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
+			Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU13">
+		<nom>Pratique de la cryptographie</nom>
+		<credit>3</credit>
+		<resume>		
+			Nous sommes désolé, mais nous n'avons pas encore de résumé.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU9">
+		<ref-intervenant ref="dal-molin" />
+		<nom>Anglais</nom>
+		<credit>3</credit>
+		<resume>						
+			Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU2">
+		<ref-intervenant ref="rene-chabarot" />
+		<nom>Communication</nom>
+		<credit>3</credit>
+		<resume>						
+			chapitre 1  : Théories de la communication :
+				1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)
+				1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)
+			chapitre 2 : Rôle de l’interculturalité dans le travail en équipe :
+				2.1 L’enquête interculturelle de Hofstede pour IBM
+				2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall)
+			chapitre 3 : Notions de management et de travail collaboratif
+				3.1 Le travail collaboratif vs le travail coopératif
+				3.2 La notion de groupes
+				3.3 Les compétences managériales
+			Pré-requis :
+			Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU4">
+		<ref-intervenant ref="massat" />
+		<nom>XML</nom>
+		<credit>3</credit>
+		<resume>
+			XML, DTD, XSD
+			XPath, XSLT, XQuery
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU5">
+		<nom>Algorithmique et recherche opérationnelle</nom>
+		<credit>3</credit>
+		<resume>		
+			Programmation linéaire.
+			Notions et algorithmes de flots.
+			Applications (couplage, affectation, transport, ...)
+			Programmation dynamique (sac à dos, ordonnancement, ...)
+			Algorithmes à performance garantie
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU15">
+		<nom>Programmation parallèle</nom>
+		<credit>3</credit>
+		<resume>		
+			Nous sommes désolé, mais nous n'avons pas encore de résumé.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINCU6">
+		<nom>Projet</nom>
+		<credit>6</credit>
+		<resume>		
+			Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU7">
+		<nom>Stage</nom>
+		<credit>6</credit>
+		<resume>		
+			Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU8">
+		<nom>Sémantique</nom>
+		<credit>3</credit>
+		<resume>		
+			1-Le lambda-calcul simplement typé
+			Syntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.
+			2-Extension à PCF. La règle \mu.
+			3-Points fixes dans les ordres partiels complets.
+			Le théorème de Tarski.
+			4-Sémantique par point fixe de PCF.
+			5-Cours de clôture : survol des différentes approches sémantiques.
+			Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de Landin.
+			Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINCU9">
+		<nom>Algorithmique distribuée</nom>
+		<credit>3</credit>
+		<resume>
+			Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU10">
+		<nom>Intégration des systèmes d'information</nom>
+		<credit>3</credit>
+		<resume>		
+			Problématique d'intégration des SI
+			Architectures et patrons d'intégration
+			Systèmes d'Information d'entreprises
+			Systèmes d'Information sur Internet
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU11">
+		<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
+		<credit>3</credit>
+		<resume>		
+			Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).
+			ar ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU12">
+		<nom>Intelligence artificielle</nom>
+		<credit>3</credit>
+		<resume>				
+			Introduction à l'IA
+			Problèmes d'espace d'états et d'exploration
+			Logiques pour l'IA et démonstration automatique
+			Représentation de connaissances
+			Actions, temps et planification
+			Programmation par contraintes et réseaux de contraintes		
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINAU13">
+		<nom>Algorithme à performance garantie</nom>
+		<credit>3</credit>
+		<resume>				
+			Algorithmes d'approximation de nature combinatoire pour les problèmes
+			NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ;
+			FPTAS et PTAS (ordonnancement de taches et sac à dos) ;
+			Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;
+			Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINBU16">
+		<nom>Introduction à l'aprentissage automatique</nom>
+		<credit>3</credit>
+		<resume>				
+			Ce module constitue une introduction à l’apprentissage automatique (Machine Learning). Son contenu est structuré en 5 chapitres :
+			Introduction aux concepts de bases : formalisme statistique pour l'apprentissage supervisé (classification et régression), l'apprentissage non supervisé et l'estimation de densité
+			Arbres de décision et sélection de modèles par validation croisée.
+			Régression linéaire (une variable), méthode des moindres carrés, sélection de variables. Pointeurs vers les modèles linéaires généralisés et la parcimonie.
+			Algorithme du perceptron, perceptron à noyau. Pointeurs vers les réseaux de neurones et les séparateurs à vaste marge (SVM).
+			Réseaux de neurones. Pointeurs vers le deep learning.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINCU41">
+		<nom>Qualité logicielle : outils et méthodes</nom>
+		<credit>6</credit>
+		<resume>				
+			Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINCU42">
+		<nom>Spécification logicielle</nom>
+		<credit>3</credit>
+		<resume>				
+			Modèles formels, modèle SADT, logiciels temps réel, méthode SA-RT.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINCU43">
+		<nom>Conception logicielle</nom>
+		<credit>3</credit>
+		<resume>				
+			Conception objet, patrons de conception, conception IHM.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINDU3">
+		<nom>Projet industriel de mise en application</nom>
+		<credit>6</credit>
+		<resume>				
+			Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINDU4">
+		<nom>Projet industriel de mise en application</nom>
+		<credit>24</credit>
+		<resume>				
+			Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+	<ue id="ENSINCU1">
+		<nom>Algorithmique et complexité</nom>
+		<credit>6</credit>
+		<resume>
+			Principales techniques de conception et analyse d'algorithmes (efficaces) pour les problèmes polynomiaux et les problèmes NP-complets. Complexité de l'approximation, du comptage. Complexité paramétrée. Classes probabilistes.			
+		</resume>
+		<lieu>&lum;</lieu>
+	</ue>
+
+	<!-- *********************************************************** -->
+	
+	<parcours>
+		<responsable>Rémi morin</responsable>
+		<nom>Première année de tronc commun</nom>
+		<description>
+			L'objectif de cette première année est de donner les bases indispensables permettant,
+			en deuxième année, de choisir une spécialisation dans un domaine précis. 
+			Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels.
+			Ces options permettent de construire un parcours adapté.
+			Un choix entre stage ou projet encadré est également proposé au semestre de printemps.
+		</description>
+		<semestre>
+			<bloc>
+				<role>&ueo;</role>
+				<ref-ue ref="ENSINAU1"/>
+				<ref-ue ref="ENSINAU2"/>
+				<ref-ue ref="ENSINAU3"/>
+				<ref-ue ref="ENSINAU4"/>
+				<ref-ue ref="ENSINAU12"/>
+			</bloc>
+			<bloc>
+				<role>6 &cac; (options)</role>
+				<ref-ue ref="ENSINAU6"/>
+				<ref-ue ref="ENSINAU6"/>
+				<ref-ue ref="ENSINBU7"/>
+				<ref-ue ref="ENSINBU8"/>
+				<ref-ue ref="ENSINAU9"/>
+				<ref-ue ref="ENSINAU10"/>
+				<ref-ue ref="ENSINBU13"/>
+			</bloc>
+		</semestre>
+		<semestre>
+			<bloc>
+				<role>&ueo;</role>
+				<ref-ue ref="ENSINBU9"/>
+				<ref-ue ref="ENSINBU2"/>
+				<ref-ue ref="ENSINBU4"/>
+				<ref-ue ref="ENSINBU5"/>
+				<ref-ue ref="ENSINBU15"/>
+			</bloc>
+			<bloc>
+				<role>6 &cac; (Projet/Stage)</role>
+				<ref-ue ref="ENSINCU6"/>
+				<ref-ue ref="ENSINAU7"/>
+			</bloc>
+			<bloc>
+				<role>9 &cac; (options)</role>
+				<ref-ue ref="ENSINAU8"/>
+				<ref-ue ref="ENSINCU9"/>
+				<ref-ue ref="ENSINBU10"/>
+				<ref-ue ref="ENSINBU11"/>
+				<ref-ue ref="ENSINBU12"/>
+				<ref-ue ref="ENSINAU13"/>
+				<ref-ue ref="ENSINBU16"/>
+			</bloc>
+		</semestre>
+	</parcours>
+	
+	<parcours>
+		<responsable>Djamal HABET</responsable>
+		<nom>Génie logiciel (GL)</nom>
+		<description>
+			La production d'un logiciel est une tâche très complexe mettant en oeuvre plusieurs ressources, notamment humaines, matériels et technologiques. La spécialité « Génie logiciel » a pour objectif d'apporter aux étudiants les compétences approfondies requises pour pouvoir intervenir dans toutes les phases de la production logiciel.
+		</description>
+		<debouches>
+			Ingénieur informaticien, Ingénieur d’études et de développement, Ingénieur qualité logicielle, Architecte JEE, Architecte d’applications, Développeur et concepteur d’applications, Ingénieur développeur Web, Chef de projets, Consultant.
+		</debouches>
+		<semestre>
+			<bloc>
+				<role>&ueo;</role>
+				<ref-ue ref="ENSINCU41"/>
+				<ref-ue ref="ENSINCU42"/>
+				<ref-ue ref="ENSINCU43"/>
+			</bloc>
+		</semestre>
+		<semestre>
+			<bloc>
+				<role>&ueo;</role>
+				<ref-ue ref="ENSINDU3"/>
+				<ref-ue ref="ENSINDU4"/>
+			</bloc>
+		</semestre>
+	</parcours>
+	
+	<parcours>
+		<responsable>Thierry ARTIÈRES</responsable>
+		<responsable>Pierre-Alain REYNIER</responsable>
+		<nom>Informatique fondamentale (IF)</nom>
+		<description>
+			L'objectif de la spécialité Informatique Fondamentale est de donner des connaissances solides dans le domaine des fondements de l'informatique. Il s'agit d'acquérir des connaissances sur les concepts et les méthodes dans l es thèmes couverts par le Laboratoire d'Informatique Fondamentale.
+		</description>
+		<debouches>
+			Emplois recherche et développement dans des entreprises privées ou des établissements publics, ou emploi d'enseignant-chercheur pour les étudiants qui poursuivent en thèse.
+		</debouches>
+		<semestre>
+			<bloc>
+				<role>&ueo;</role>
+				<ref-ue ref="ENSINCU1"/>
+			</bloc>
+		</semestre>
+	</parcours>
+
+</master>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet
+    href="monStyle.css" media="screen"
+    title="Compact" type="text/css" ?>
+<!DOCTYPE master SYSTEM "tp3a.dtd">
+
+
+<master>
+	
+  <UE id="UNCODE">
+    <nom> maths </nom>
+    <identifiant> 1 </identifiant>
+    <credit> <nom>3</nom> </credit>
+    <resume> mathématiques </resume>
+    <plan> -ça çi -cela </plan>
+    <lieu> &ville; </lieu>
+    <ref-intervenant ref="Delafontaine"/>
+  </UE>
+  
+  <intervenant id="Delafontaine">
+  	<nom> Jean </nom>
+  	<identifiant> 100 </identifiant>
+  	<mail> jean&adrMail; </mail>
+  	<adrWeb>  http://masterinfo.univ-mrs.fr </adrWeb>
+  	<ref-UE ref="UNCODE"/>
+  	<ref-UE ref="DEUXCODE"/>
+  </intervenant>
+  
+  <parcours>
+	  <responsable> Jeannot </responsable>
+	  <nom> Parcours1 </nom>
+	  <description> C'est un bon parcours </description>
+	  <debouches> Informaticien </debouches>
+	  <debouches> Boucher </debouches>
+	  <semestre>
+		  <bloc role="optionnel">
+			  <UE id="DEUXCODE">
+				  <nom> français </nom>
+				  <identifiant> 2 </identifiant>
+				  <credit> <nom>3</nom> </credit>
+				  <resume> balabamba </resume>
+				  <plan> -ça çi -cela </plan>
+				  <lieu> &ville; </lieu>
+				  <ref-intervenant ref="Delafontaine"/>
+			  </UE>
+		  </bloc>
+	  </semestre>
+  </parcours>
+  
+</master>
